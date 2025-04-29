@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Code: Chapter 6</title> 
+  <link rel="stylesheet" href="css/style.240618.css"> 
+ </head> 
+ <body> 
+  <header> 
+   <h1> <a href=".."><i>CODE</i></a><br><i>《编码：隐匿在计算机软硬件背后的语言》</i><br> </h1> 
+   <h2>逻辑与开关</h2> 
+  </header> 
+  <div class="narrative"> 
+   <p> 本章将展示如何用开关、电池、灯泡和导线组成的简单电路，来实现基本的逻辑运算。</p> 
+   <p> 在下方电路中，可通过鼠标点击或手指触摸来切换开关状态。红色高亮表示当前有电流通过电路。</p> 
+  </div> 
+  <h3>串联开关电路</h3> 
+  <div class="narrative"> 
+   <p>将两个开关串联连接可实现逻辑与运算（AND）。</p> 
+  </div> 
+  <div class="canvas-container"> 
+   <canvas id="canvasSeries" width="640" height="400">
+    您的浏览器不支持画布元素，请升级或者使用电脑浏览器
+   </canvas> 
+  </div> 
+  <h3>并联开关电路</h3> 
+  <div class="narrative"> 
+   <p>将两个开关并联连接可实现逻辑或运算（OR）。</p> 
+  </div> 
+  <div class="canvas-container"> 
+   <canvas id="canvasParallel" width="640" height="400">
+    您的浏览器不支持画布元素，请升级或者使用电脑浏览器
+   </canvas> 
+  </div> 
+  <h3>猫咪选择器</h3> 
+  <div class="narrative"> 
+   <p>假设你走进宠物商店告诉店员：“我想要一只公猫，已绝育的，白色或褐色都可以；或者一只母猫，已绝育的，除了白色任何颜色都可以；或者一只黑猫。🤗”</p>
+   <p>通过串联与并联的组合可实现更复杂的逻辑表达式，如下电路用于判断特定猫咪是否符合筛选条件：</p> 
+  </div> 
+  <div class="canvas-container"> 
+   <canvas id="canvasKittens" width="800" height="550">
+    您的浏览器不支持画布元素，请升级或者使用电脑浏览器
+   </canvas> 
+  </div> 
+  <hr> 
+  <footer>
+    © 2025, 
+   <a href="https://www.charlespetzold.com">来源于 Charles Petzold</a> | 一起读书！公众号：自权的SPACE
+  </footer> 
+  <script src="js/PropagatingLogicLib.240618.js"></script> 
+  <script src="js/PropagatingIoLib.240618.js"></script> 
+  <script src="js/StructuredLayoutLib.240618.js"></script> 
+  <script src="js/Chapter06SwitchesInSeries.json.js"></script> 
+  <script src="js/Chapter06SwitchesInParallel.json.js"></script> 
+  <script src="js/Chapter06KittenSelector.json.js"></script> 
+  <script>
+            new CircuitBuilder(canvasSeries, Chapter06SwitchesInSeries);
+            new CircuitBuilder(canvasParallel, Chapter06SwitchesInParallel);
+            new CircuitBuilder(canvasKittens, Chapter06KittenSelector);
+        </script>  
+ </body>
+</html>
