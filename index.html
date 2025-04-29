@@ -1,62 +1,51 @@
 <!doctype html>
 <html lang="en">
  <head> 
-  <meta charset="utf-8"> 
-  <title>Code: Chapter 6</title> 
-  <link rel="stylesheet" href="css/style.240618.css"> 
+  <title>Code by Charles Petzold</title> 
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+  <meta name="description" content="Interactive Circuits from the book Code by Charles Petzold"> 
+  <meta name="author" content="Charles Petzold"> 
+  <meta property="og:title" content="“Code” by Charles Petzold"> 
+  <meta property="og:description" content="A few interactive circuits from “Code” 2nd edition"> 
+  <meta property="og:image" content="https://www.codehiddenlanguage.com/Code2Cover.jpg"> 
+  <meta property="twitter:title" content="“Code” by Charles Petzold"> 
+  <meta property="twitter:description" content="A few interactive circuits from “Code” 2nd edition"> 
+  <meta property="twitter:image" content="https://www.codehiddenlanguage.com/Code2Cover.jpg"> 
+  <link rel="stylesheet" href="css/css"> 
+  <link rel="stylesheet" type="text/css" href="css/style.240618.css"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="css/apple-touch-icon.png"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.png"> 
+  <link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.png"> 
+  <link rel="manifest" href="css/site.webmanifest"> 
  </head> 
  <body> 
   <header> 
-   <h1> <a href=".."><i>CODE</i></a><br><i>《编码：隐匿在计算机软硬件背后的语言》</i><br> </h1> 
-   <h2>逻辑与开关</h2> 
+   <h1> Interactive Illustrations from: </h1> 
+   <img src="images/Code2Cover.jpg" width="308" height="400" alt="Code book cover" title="Code: The Hidden Language of Computer Hardware and Software"> 
   </header> 
-  <div class="narrative"> 
-   <p> 本章将展示如何用开关、电池、灯泡和导线组成的简单电路，来实现基本的逻辑运算。</p> 
-   <p> 在下方电路中，可通过鼠标点击或手指触摸来切换开关状态。红色高亮表示当前有电流通过电路。</p> 
-  </div> 
-  <h3>串联开关电路</h3> 
-  <div class="narrative"> 
-   <p>将两个开关串联连接可实现逻辑与运算（AND）。</p> 
-  </div> 
-  <div class="canvas-container"> 
-   <canvas id="canvasSeries" width="640" height="400">
-    您的浏览器不支持画布元素，请升级或者使用电脑浏览器
-   </canvas> 
-  </div> 
-  <h3>并联开关电路</h3> 
-  <div class="narrative"> 
-   <p>将两个开关并联连接可实现逻辑或运算（OR）。</p> 
-  </div> 
-  <div class="canvas-container"> 
-   <canvas id="canvasParallel" width="640" height="400">
-    您的浏览器不支持画布元素，请升级或者使用电脑浏览器
-   </canvas> 
-  </div> 
-  <h3>猫咪选择器</h3> 
-  <div class="narrative"> 
-   <p>假设你走进宠物商店告诉店员：“我想要一只公猫，已绝育的，白色或褐色都可以；或者一只母猫，已绝育的，除了白色任何颜色都可以；或者一只黑猫。🤗”</p>
-   <p>通过串联与并联的组合可实现更复杂的逻辑表达式，如下电路用于判断特定猫咪是否符合筛选条件：</p> 
-  </div> 
-  <div class="canvas-container"> 
-   <canvas id="canvasKittens" width="800" height="550">
-    您的浏览器不支持画布元素，请升级或者使用电脑浏览器
-   </canvas> 
+  <div style="width: 450px; margin: 0 auto;"> 
+   <h2 class="toc"> <a href="Chapter00">Introduction</a> (and where to get the book) </h2> 
+   <h2 class="toc"> <a href="6/index.html">Chapter 6. Logic with Switches</a> </h2> 
+   <h2 class="toc"> <a href="8/index.html">Chapter 8. Relays and Gates</a> </h2> 
+   <h2 class="toc"> <a href="10/index.html">Chapter 10. Alternative 10s</a> </h2> 
+   <h2 class="toc"> <a href="14/index.html">Chapter 14. Adding with Logic Gates</a> </h2> 
+   <h2 class="toc"> <a href="15/index.html">Chapter 15. Is This for Real?</a> </h2> 
+   <h2 class="toc"> <a href="16/index.html">Chapter 16. But What About Subtraction?</a> </h2> 
+   <h2 class="toc"> <a href="17/index.html">Chapter 17. Feedback and Flip-Flops</a> </h2> 
+   <h2 class="toc"> <a href="18/index.html">Chapter 18. Let's Build a Clock!</a> </h2> 
+   <h2 class="toc"> <a href="19/index.html">Chapter 19. An Assemblage of Memory</a> </h2> 
+   <h2 class="toc"> <a href="20/index.html">Chapter 20. Automating Arithmetic</a> </h2> 
+   <h2 class="toc"> <a href="21/index.html">Chapter 21. The Arithmetic Logic Unit</a> </h2> 
+   <h2 class="toc"> <a href="22/index.html">Chapter 22. Registers and Busses</a> </h2> 
+   <h2 class="toc"> <a href="23/index.html">Chapter 23. CPU Control Signals</a> </h2> 
+   <h2 class="toc"> <a href="24/index.html">Chapter 24. Loops, Jumps, and Calls</a> </h2> 
+   <h2 class="toc"> <a href="27a/index.html">Chapter 27. Coding: Assembly Language</a> </h2> 
+   <h2 class="toc"> <a href="27b/index.html">Chapter 27. Coding: JavaScript</a> </h2> 
   </div> 
   <hr> 
   <footer>
-    © 2025, 
-   <a href="https://www.charlespetzold.com">来源于 Charles Petzold</a> | 一起读书！公众号：自权的SPACE
-  </footer> 
-  <script src="js/PropagatingLogicLib.240618.js"></script> 
-  <script src="js/PropagatingIoLib.240618.js"></script> 
-  <script src="js/StructuredLayoutLib.240618.js"></script> 
-  <script src="js/Chapter06SwitchesInSeries.json.js"></script> 
-  <script src="js/Chapter06SwitchesInParallel.json.js"></script> 
-  <script src="js/Chapter06KittenSelector.json.js"></script> 
-  <script>
-            new CircuitBuilder(canvasSeries, Chapter06SwitchesInSeries);
-            new CircuitBuilder(canvasParallel, Chapter06SwitchesInParallel);
-            new CircuitBuilder(canvasKittens, Chapter06KittenSelector);
-        </script>  
+    © 2024, 
+   <a href="https://www.charlespetzold.com">Charles Petzold</a> 
+  </footer>   
  </body>
 </html>
